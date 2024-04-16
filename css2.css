@@ -1,0 +1,143 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    background-color:#b0c4b1;
+}
+
+/* Apply styles to the body */
+/* Center align block-level elements within the body */
+body {
+    background-color:#b0c4b1;
+    color: #4a5759;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/* Center align block-level elements (e.g., headings, paragraphs, lists) */
+body > * {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; /* Reset text alignment for block-level elements */
+}
+
+
+/* Apply styles to the links */
+a {
+    color:#4a5759;
+    text-decoration: none;
+}
+
+/* Style headings */
+h1 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+/* Style the list items */
+body > ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+
+}
+
+/* Style the individual list items */
+body > ol > li {
+    margin-bottom: 20px;
+}
+
+/* Apply styles to the contact information */
+.address {
+    font-weight: bold;
+}
+
+/* Style the quotes */
+blockquote {
+    background-color: rgba(73, 188, 73, 0.1);
+    border-left: 5px solid rgb(203, 255, 169);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+.top-bar {
+    display: flex; /* Use flexbox to align items horizontally */
+    /* background-color: #84a59d; Background color of the bar */
+    color: #ffffff; /* Text color */
+    padding: 10px; /* Add padding to the bar */
+}
+.text {
+    font-size: 18px; 
+    font-family: 'Lato', sans-serif;
+}
+.head {
+    font-family:cursive;
+    font-size: 100px;
+    color: #4a5759; /* Set the desired text color */
+    text-align: center; /* Center align the text */
+}
+
+.center {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #4a5759; /* Set border width and color */
+    padding: 2px; /* Optional: Add padding around the image */
+} 
+
+
+/* CSS to style the boxes */
+.box1 {
+    background-image: url("greendesign.png"); /* Background color */
+    /*border: 2px solid rgb(203, 255, 169); Border style */
+    padding: 25px; /* Padding around the content */
+    margin: 25px; /* Margin between boxes */
+    width: 800px;
+    display: inline-block;
+    /* float:left; */
+    border-radius: 20px;
+}
+.box2 {
+    background-image: url("greendesign.png");
+    /*border: 2px solid rgb(203, 255, 169); Border style */
+    padding: 25px; /* Padding around the content */
+    margin: 25px; /* Margin between boxes */
+    width: 800px;
+    display: inline-block;
+    /* float:right; */
+    border-radius: 20px;
+}
+
+.container {
+    text-align: center; /* Horizontally center-align */
+}
+
+/* CSS to style highlighted words */
+.highlight {
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(149,245,84);
+}
+
+span {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   {left:0px; top:0px;}
+    /* 25%  {left:100px; top:0px;} */
+    50%  {left:100px; top:100px;}
+    /* 75%  {left:0px; top:100px;} */
+    100% {left:0px; top:0px;}
+  }
